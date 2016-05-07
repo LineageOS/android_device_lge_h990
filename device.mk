@@ -25,3 +25,7 @@ $(call inherit-product, device/lge/g5-common/g5.mk)
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_h1_tmo_us.conf:system/etc/sensors/sensor_def_variable.conf
+
+# WiFi Calibration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
