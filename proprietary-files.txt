@@ -1,0 +1,7 @@
+# Bluetooth
+vendor/firmware/BCM4358A3_001.004.015.0071.0113.hcd
+
+# WiFi
+etc/firmware/fw_bcmdhd.bin
+etc/firmware/fw_bcmdhd_apsta.bin
+etc/firmware/fw_bcmdhd_mfg.bin
