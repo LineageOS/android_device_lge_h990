@@ -1,4 +1,7 @@
-# H830 Properties
+#
+# System Properties for T-Mobile LG G5
+#
 
-# Wi-Fi
-wlan.chip.version=bcm4358
+# Radio
+ro.telephony.default_network=9
+telephony.lteOnGsmDevice=1
