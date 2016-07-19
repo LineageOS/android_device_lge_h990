@@ -22,6 +22,9 @@ $(call inherit-product-if-exists, vendor/lge/h830/h830-vendor.mk)
 # common g5
 $(call inherit-product, device/lge/g5-common/g5.mk)
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_h1_tmo_us.conf:system/etc/sensors/sensor_def_variable.conf
