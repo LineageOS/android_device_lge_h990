@@ -1,5 +1,5 @@
 # Bluetooth
-vendor/firmware/BCM4358A3_001.004.015.0072.0120.hcd
+vendor/firmware/BCM4358A3_001.004.015.0072.0120_LGE_Alice_KR.hcd
 
 # Graphics firmware
 etc/firmware/a530_gpmu.fw2
