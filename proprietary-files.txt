@@ -1,21 +1,6 @@
 # Bluetooth
 vendor/firmware/BCM4358A3_001.004.015.0072.0120_LGE_Alice_KR.hcd
 
-# Graphics firmware
-etc/firmware/a530_gpmu.fw2
-etc/firmware/a530_pfp.fw
-etc/firmware/a530_pm4.fw
-etc/firmware/a530_zap.b00
-etc/firmware/a530_zap.b01
-etc/firmware/a530_zap.b02
-etc/firmware/a530_zap.elf
-etc/firmware/a530_zap.mdt
-etc/firmware/a530v1_pfp.fw
-etc/firmware/a530v1_pm4.fw
-etc/firmware/a530v2_seq.fw2
-etc/firmware/a530v3_gpmu.fw2
-etc/firmware/a530v3_seq.fw2
-
 # WiFi
 etc/firmware/fw_bcmdhd.bin
 etc/firmware/fw_bcmdhd_apsta.bin
