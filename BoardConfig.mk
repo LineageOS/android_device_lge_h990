@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/lge/h830
+
 # inherit from common g5
 -include device/lge/g5-common/BoardConfigCommon.mk
 
