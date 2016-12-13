@@ -1,6 +1,6 @@
 [
   {
-    "repository": "android_device_lge_g5-common",
-    "target_path": "device/lge/g5-common"
+    "repository": "android_device_lge_v20-common",
+    "target_path": "device/lge/v20-common"
   }
 ]

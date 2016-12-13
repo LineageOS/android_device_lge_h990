@@ -17,8 +17,8 @@
 
 set -e
 
-export DEVICE=h830
-export DEVICE_COMMON=g5-common
+export DEVICE=h918
+export DEVICE_COMMON=v20-common
 export VENDOR=lge
 
 ./../$DEVICE_COMMON/extract-files.sh $@
