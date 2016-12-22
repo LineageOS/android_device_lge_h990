@@ -18,7 +18,7 @@
 set -e
 
 export DEVICE=h918
-export DEVICE_COMMON=g5-common
+export DEVICE_COMMON=v20-common
 export VENDOR=lge
 
 ./../$DEVICE_COMMON/setup-makefiles.sh $@
