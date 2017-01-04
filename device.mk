@@ -22,6 +22,10 @@ $(call inherit-product-if-exists, vendor/lge/h918/h918-vendor.mk)
 # common v20
 $(call inherit-product, device/lge/v20-common/v20.mk)
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
