@@ -1,5 +1,5 @@
 # Bluetooth
-vendor/firmware/BCM4358A3_001.004.015.0076.0130_0x66_ORC.HCD:vendor/firmware/BCM4358A3.hcd
+vendor/firmware/BCM4358A3.hcd
 
 # WiFi
 etc/firmware/fw_bcmdhd.bin
