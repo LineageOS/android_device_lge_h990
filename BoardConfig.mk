@@ -19,7 +19,7 @@ DEVICE_PATH := device/lge/h910
 # inherit from common v20
 -include device/lge/v20-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := h910,us996
+TARGET_OTA_ASSERT_DEVICE := h910,us996,elsa
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h910_defconfig
