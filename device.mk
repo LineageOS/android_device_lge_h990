@@ -23,10 +23,6 @@ $(call inherit-product-if-exists, vendor/lge/h910/h910-vendor.mk)
 # common v20
 $(call inherit-product, device/lge/v20-common/v20.mk)
 
-# Bluetooth
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
-
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_elsa_att_us.conf:system/etc/sensors/sensor_def_variable.conf
