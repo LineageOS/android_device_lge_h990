@@ -1,7 +1,7 @@
 #
-# System Properties for AT&T LG V20
+# System Properties for Global LG V20 (H990)
 #
 
 # Radio
 ro.telephony.default_network=9
-telephony.lteOnGsmDevice=1
+telephony.lteOnCdmaDevice=1
