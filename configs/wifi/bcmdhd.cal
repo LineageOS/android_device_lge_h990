@@ -1,165 +1,264 @@
-# LGE BCM43455 H+GLOBAL Rev 1.0 - 20160824
-NVRAMRev=$Rev: 498373 $
-sromrev=11
-vendid=0x14e4
-devid=0x43ab
-manfid=0x2d0
-prodid=0x06e4
+# LG 4358 H1_LGU for BRCM_20160412
 
-#Dummy Mac. Address
-macaddr=00:90:0C:BA:CD:88
+###################################################################################################
+# General parameters
+sromrev=11
+boardrev=0x1110
+boardtype=0x0752
+macaddr=00:90:4c:19:90:01
+ccode=ALL
+regrev=0
+vendid=0x14e4
+devid=0x43e9
+manfid=0x2d0
+#prodid=0x052e
+xtalfreq=37400
+otpimagesize=484
+#pciehdr=bcm94358wlspie_01
+boardflags=0x12001201
+boardflags2=0x00002000
+# RF Configuration
+antswitch=0
+femctrl=10
+rxchain=3
+txchain=3
+aa2g=3
+aa5g=3
+agbg0=0
+agbg1=0
+aga0=0
+aga1=0
+ag0=0
+
+AvVmid_c0=2,140,2,145,2,145,2,145,2,145
+AvVmid_c1=2,140,2,145,2,145,2,145,2,145
+tssisleep_en=0x1f
+
+ltecxmux=0x77540
+phy4350_ss_opt=1
+#ofdmfilttype=1
+
+dot11agduphrpo=0x0
+dot11agduplrpo=0x0
+
+# Temperature setting
+tempthresh=120
+temps_hysteresis=10
+tempoffset=255
+rawtempsense=0x1ff
+phycal_tempdelta=25
+temps_period=15
 
 nocrc=1
-boardtype=0x6e4
-boardrev=0x1304
 
-#XTAL 37.4MHz
-xtalfreq=37400
-##2G RSSI compensation 20/40
-rssicorrnorm_c0=3,3
-
-
-##5G RSSI compenation Low(36-48):20/40/80, Mid(54-64):20/40/80, High(100-140):20/40/80, X1(149-165):20/40/80
-#rssicorrnorm5g_c0=0,0,0,0,0,0,0,0,0,2,2,2
-
-#------------------------------------------------------
-#boardflags: 5GHz eTR switch by default
-#            2.4GHz eTR switch by default
-#            bit1 for btcoex
-boardflags=0x00080201
-boardflags2=0x40000000
-boardflags3=0x48200100
-phycal_tempdelta=15
-rxchain=1
-txchain=1
-aa2g=1
-aa5g=1
-ag0=0
-tssipos5g=1
-tssipos2g=1
-femctrl=0
-AvVmid_c0=0,157,1,126,1,126,1,126,1,126
-
-pa2ga0=0xffd3,0x1773,0xfdcc
-pa2ga1=0xffb8,0x1006,0xfdbf
-pa5ga0=0xffae,0x16da,0xfdb1,0xffb1,0x1720,0xfda6,0xffae,0x16dd,0xfda2,0xffa9,0x1640,0xfda2
-pa5ga1=0x0037,0x0ef0,0xfde9,0x0058,0x0f41,0xfdea,0x0049,0x0eea,0xfe02,0x001d,0x0e07,0xfe01
-
-
-itrsw=1
-cckpwroffset0=0
-cckbw202gpo=0x0000
-
-
-pdoffset2g40ma0=10
-pdoffset40ma0=0xaaaa
-pdoffset80ma0=0xaaaa
-extpagain5g=2
-extpagain2g=2
-
-lowpowerrange2g=0
-lowpowerrange5g=0
+boardflags3=0x4800010a
 tworangetssi2g=1
 tworangetssi5g=1
-# LTECX flags
-# WCI2
-ltecxmux=0
-ltecxpadnum=0x0504
-ltecxfnsel=0x22
-ltecxgcigpio=0x32
+lowpowerrange2g=0
+lowpowerrange5g=0
+olpc_thresh=1
 
-#---------------------------------------------------------------------
-# CCK Output Power = (66/4=17.5)-1.5 = 15dBm
-maxp2ga0=66
+###################################################################################################
+# 2G RF Settings
+###################################################################################################
+pdgain2g=4
 
+rxgains2gtrelnabypa0=1
+rxgains2gtrelnabypa1=1
 
+#2G elna gain from datasheet is 14dB
+#2G elna gain changed to 12dB
+rxgains2gelnagaina0=3
+rxgains2gelnagaina1=3
 
-# MCS1&2(11n&ac 40M) / MCS1&2 (11n&ac 20M) / 12&18Mbps(11a/g) / 6&9(11a/g)
-#-/-/13/13
-ofdmlrbw202gpo=0x0044
+#triso values for 2G are picked from older nvram. Might need to change.
+rxgains2gtrisoa0=6
+rxgains2gtrisoa1=6
 
+## SWCTRLMAP using TWCF-H201D (iPA/eLNA)
+swctrlmap_2g=0x00001004,0x28500000,0x08100000,0x020202,0x0ff
+swctrlmap_5g=0x00000208,0x05a00000,0x04200000,0x000000,0x0fd
+swctrlmapext_2g=0x0,0x0,0x0,0x0,0x03
 
-# 54/48/36/24M power offset
-#12/12/13/13
-dot11agofdmhrbw202gpo=0x6644
+tssipos2g=1
+extpagain2g=2
 
+##2G RSSI compensation 20/40
+rssicorrnorm_c0=5,5
+rssicorrnorm_c1=6,6
+cckdigfilttype=2
 
-# C9/C8/M7/M6/M5/M4/M3/M0-2 ( if need to control MCS1 and MCS 2 separately, then use ofdmlrbw202gpo)
-# C9/C8/M7/M6/M5/M4/M3/M0-2
-#11/11/12/12/12.5/12.5/12.5/12.5
-mcsbw202gpo=0x88665555
-mcsbw402gpo=0x88665555
+# Max Power is 17.5 dBm-1.5(backoff) = 16dBm
+maxp2ga0=70
+maxp2ga1=70
 
+# Pa Params for 2G
+##high range
+pa2ga0=0xff95,0x16f4,0xfd8b
+pa2ga1=0xff88,0x1752,0xfd79
+##low range
+pa2ga2=0xff59,0x0c71,0xfe1e
+pa2ga3=0xff6e,0x0d3e,0xfdf8
 
-#-----------------------------------------------------------------------------
-# 5G Output Power Set : maxp5ga0 66 = 15dBm (66/4=16.5-1.5=15)
-maxp5ga0=66,66,66,66
+pdoffsetcckma0=0x4
+pdoffsetcckma1=0x4
 
+# Power offsets
+cckbw202gpo=0x0000
+cckbw20ul2gpo=0x0000
 
-# C9/C8/M7/M6(54M)/M5(48M)/M4(36M)/M3(24M)/M0.2(18M/12M/9M/6M)
-#11/11/11/11/11.5/11.5/11.5/11.5
-mcsbw205glpo=0x88887777
-mcsbw205gmpo=0x88887777
-mcsbw205ghpo=0x88887777
+#C9/C8/M7/M6/M5/M4/M3/M0-2
+#13/13/13/13/13/13/13/13
+mcsbw202gpo=0x66666666
+#11/11/12/12/12/12/12/12
+mcsbw402gpo=0xAA888888
 
+#54M/48M/36M/24M
+#14.5/14.5/14.5/14.5
+dot11agofdmhrbw202gpo=0x3333
+#MCS1&2(11n&ac 40M)/MCS1&2(11n&ac 20M)/12&18M/6&9M
+#-/-/15/15
+ofdmlrbw202gpo=0x0022
 
+sb20in40hrpo=0x0
+sb20in40lrpo=0x0
+###################################################################################################
+# 5G RF Settings
+###################################################################################################
+pdgain5g=4
 
-# C9/C8/M7/M6/M5/M4/M3/M0.2
-#10.5/10.5/10.5/10.5/11/11/11/11
-mcsbw405glpo=0x99998888
-mcsbw405gmpo=0x99998888
-mcsbw405ghpo=0x99998888
+#5G elna gain from datasheet is 12dB
+rxgains5gtrelnabypa0=1
+rxgains5gtrelnabypa1=1
+rxgains5gelnagaina0=3
+rxgains5gelnagaina1=3
+rxgains5gtrisoa0=5
+rxgains5gtrisoa1=5
 
+rxgains5gmtrelnabypa0=1
+rxgains5gmtrelnabypa1=1
+rxgains5gmelnagaina0=3
+rxgains5gmelnagaina1=3
+rxgains5gmtrisoa0=6
+rxgains5gmtrisoa1=6
 
+rxgains5ghtrelnabypa0=1
+rxgains5ghtrelnabypa1=1
+rxgains5ghelnagaina0=3
+rxgains5ghelnagaina1=3
+rxgains5ghtrisoa0=6
+rxgains5ghtrisoa1=6
 
-# C9/C8/M7/M6/M5/M4/M3/M0.2
-#10/10/10/10/10.5/10.5/10.5/10.5
-mcsbw805glpo=0xAAAA9999
-mcsbw805gmpo=0xAAAA9999
-mcsbw805ghpo=0xAAAA9999
+tssipos5g=1
+extpagain5g=2
+subband5gver=0x4
 
+##5G RSSI compenation Low(36-48):20/40/80, Mid(54-64):20/40/80, High(100-140):20/40/80, X1(149-165):20/40/80
+rssicorrnorm5g_c0=2,2,2,2,2,2,4,4,4,5,5,5
+rssicorrnorm5g_c1=2,2,2,2,2,2,4,4,4,5,5,5
 
+# Max Power is 18.5 dBm -1.5(backoff) = 17dBm for all 5G bands
+maxp5ga0=46,74,74,70
+maxp5ga1=46,74,74,70
 
+# Pa Params for 5G
+#high range
+pa5ga0=0xff45,0x14b7,0xfd7a,0xff58,0x156a,0xfd77,0xff59,0x1493,0xfd92,0xff69,0x1466,0xfd9a
+pa5ga1=0xff3b,0x142a,0xfd71,0xff54,0x1511,0xfd71,0xff49,0x145d,0xfd77,0xff62,0x14e4,0xfd80
+##low range
+pa5ga2=0xff94,0x0e80,0xfde8,0xffa8,0x0e69,0xfde0,0xffa3,0x0d8e,0xfdef,0xffae,0x0e9c,0xfde1
+pa5ga3=0xff81,0x0d9f,0xfe02,0xff79,0x0ce1,0xfe07,0xff83,0x0c9e,0xfe04,0xff7b,0x0d87,0xfe08
 
+pdoffset40ma0=0x2222
+pdoffset80ma0=0x0000
+pdoffset40ma1=0x2222
+pdoffset80ma1=0x0000
 
-swctrlmap_2g=0x00040004,0x00020002,0x00040004,0x010a02,0x1ff
-swctrlmap_5g=0x00100010,0x00200020,0x00200020,0x010a02,0x2f4
-swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
-swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+# Low band power offsets
+mcslr5glpo=0x0000
+#C9/C8/M7/M6(54M)/M5(48M)/M4(36M)/M3(24M)/M0-2(18M/12M/9M/6M)
+#8/8/8/8/8/8/8/8
+mcsbw205glpo=0x44444444
+mcsbw405glpo=0x44444444
+mcsbw805glpo=0x44444444
+sb40and80lr5glpo=0x0
+sb40and80hr5glpo=0x0
+sb20in80and160lr5glpo=0x0
+sb20in80and160hr5glpo=0x0
 
-vcodivmode=1
-deadman_to=481500000
+# Mid band power offsets
+mcslr5gmpo=0x0000
+#C9/C8/M7/M6(54M)/M5(48M)/M4(36M)/M3(24M)/M0-2(18M/12M/9M/6M)
+#13/13/13/13/13/13/13/13
+mcsbw205gmpo=0x88888888
+#12/12/12/12/12/12/12/12
+mcsbw405gmpo=0xAAAAAAAA
+#12/12/12/12/12/12/12/12
+mcsbw805gmpo=0xAAAAAAAA
+sb40and80lr5gmpo=0x0
+sb40and80hr5gmpo=0x0
+sb20in80and160lr5gmpo=0x0
+sb20in80and160hr5gmpo=0x0
 
-ed_thresh2g=-54
-ed_thresh5g=-54
-eu_edthresh2g=-54
-eu_edthresh5g=-54
-ldo1=4
-rawtempsense=0x1ff
-muxenab=0x10
-#For Firmware 57 and later
-cckPwrIdxCorr=3
-dot11b_opts=0x3aa85
+# High band power offsets
+mcslr5ghpo=0x0000
+#C9/C8/M7/M6(54M)/M5(48M)/M4(36M)/M3(24M)/M0-2(18M/12M/9M/6M)
+#13/13/13/13/13/13/13/13
+mcsbw205ghpo=0x88888888
+#12/12/12/12/12/12/12/12
+mcsbw405ghpo=0xAAAAAAAA
+#12/12/12/12/12/12/12/12
+mcsbw805ghpo=0xAAAAAAAA
+sb40and80lr5ghpo=0x0
+sb40and80hr5ghpo=0x0
+sb20in80and160lr5ghpo=0x0
+sb20in80and160hr5ghpo=0x0
+
+# X1 band power offsets
+#20M : 12/12/12/12/12/12/12/12
+#40M : 11/11/11/11/11/11/11/11
+#80M : 11/11/11/11/11/11/11/11
+
+## 2G TX power compensation
+powoffs2gtna0=1,1,1,1,0,0,0,0,0,0,-1,-1,-1,0
+powoffs2gtna1=-5,2,3,3,2,1,0,0,1,1,2,1,3,0
+cck_onecore_tx=1
+
+epsdelta2g0=0
+epsdelta2g1=0
+papdwar=4
+
+# 5G Bandedge Backoff
+powoffs5g20mtna0=0,0,0,0,0,-4,0
+powoffs5g40mtna0=0,0,0,0,-4
+powoffs5g80mtna0=0,0,0,0,-4
+powoffs5g20mtna1=0,0,0,0,0,-4,0
+powoffs5g40mtna1=0,0,0,0,-4
+powoffs5g80mtna1=0,0,0,0,-4
+
 ## Enabling OOB signal
 host_wake_opt=0
 
-#2.4G TX Compensation parameter for 2.4G(-15 ~ +3dB)
-powoffs2gtna0=2,2,2,2,1,0,0,0,1,2,-5,4,5,0
+btc_params82=0x0
+btc_params51=0x409f
+btc_params73=0
+prot_btrssi_thresh=0
 
-#5G TX Compensation parameter(CH36, Ch64, CH100, CH140, CH144, CH149, CH165)(-15 ~ +3dB)
-#powoffs5g20mtna0=0,0,0,0,0,0,0
+# ###########  BTC Dynctl profile params  ############
+# flags:bit0 - dynctl enabled, bit1 dynamic desense, bit2 dynamic mode
+btcdyn_flags=0x7
+btcdyn_dflt_dsns_level=0
+btcdyn_low_dsns_level=0
+btcdyn_mid_dsns_level=12
+btcdyn_high_dsns_level=2
+btcdyn_default_btc_mode=1
+# --- number of rows in the array vars below ---
+btcdyn_msw_rows=1
+btcdyn_dsns_rows=1
+# --- mode switch data rows (max is 4) ---
+btcdyn_msw_row0=1,12,-70,-5,-100
+# --- desense switching data rows (max is 4) ---
+btcdyn_dsns_row0=5,4,0,-65,-65
 
-#5G TX Compensation parameter(CH38, Ch62, CH102, CH142 CH151)(-15 ~ +3dB)
-#powoffs5g40mtna0=0,0,0,0,0
-
-#5G TX Compensation parameter(CH42, Ch58, CH106, CH138, CH155) (-15 ~ +3dB)
-powoffs5g80mtna0=0,0,-3,0,0
-
-
-# Set btc_params for BT coex issue
-btc_params80=0
-cbfilttype=2
-fdsslevel_ch1=6
-fdsslevel_ch11=4
-#cck digital filter type (default=6) - for cck SPMSK
-cckdigfilttype=5
+# Set btc_params for BT coex issue 
+btc_params80=0 
