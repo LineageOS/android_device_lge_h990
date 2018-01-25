@@ -4,4 +4,4 @@
 
 # Radio
 ro.telephony.default_network=9
-telephony.lteOnCdmaDevice=1
+telephony.lteOnGsmDevice=1
