@@ -1,0 +1,6 @@
+# Contains exta bits of data, believed related to LTE functionality; also
+# parameters for resizing /data and /OP.
+/dev/block/bootdevice/by-name/cust	/cust	ext4	ro	wait
+
+# Mostly bloatware, but since the flash is there...
+/dev/block/bootdevice/by-name/OP	/OP	ext4	ro	defaults

@@ -30,3 +30,13 @@ PRODUCT_COPY_FILES += \
 # WiFi Calibration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+
+# Device init scripts
+PRODUCT_PACKAGES += \
+    fstab.h990 \
+    init.device.rc
+
+# h990 modem fix
+PRODUCT_PACKAGES += \
+    fix-h990-modem
+
