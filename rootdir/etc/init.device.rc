@@ -1,0 +1,11 @@
+# Extras for the H990* variants of the LGE V20
+
+# Mount the extra flash device
+on fs
+	wait /dev/block/bootdevice
+	mount_all fstab.h990
+
+# Fixup of the modem
+on early-init
+	# Required for correct modem operation on H990* (otherwise FW panics)
+	exec - root root -- /sbin/fix-h990-modem -b

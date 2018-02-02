@@ -27,5 +27,9 @@ TARGET_KERNEL_CONFIG := lineageos_h990_defconfig
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Partitions
+override BOARD_CACHEIMAGE_PARTITION_SIZE := 536870912
+override BOARD_SYSTEMIMAGE_PARTITION_SIZE := 5863636992
+
 # inherit from the proprietary version
 -include vendor/lge/h990/BoardConfigVendor.mk
