@@ -2,6 +2,6 @@
 vendor/firmware/BCM4358A3_001.004.015.0076.0130_0x66_ORC.HCD:vendor/firmware/BCM4358A3.hcd
 
 # WiFi
-etc/firmware/fw_bcmdhd.bin
-etc/firmware/fw_bcmdhd_apsta.bin
-etc/firmware/fw_bcmdhd_mfg.bin
+vendor/firmware/fw_bcmdhd.bin
+vendor/firmware/fw_bcmdhd_apsta.bin
+vendor/firmware/fw_bcmdhd_mfg.bin
