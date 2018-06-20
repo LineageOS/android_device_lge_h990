@@ -30,3 +30,10 @@ PRODUCT_COPY_FILES += \
 # WiFi Calibration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/bcmdhd.cal:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd.cal
+
+# Device init scripts
+PRODUCT_PACKAGES += \
+    rild2.rc
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.multisim.config=dsds
