@@ -30,3 +30,14 @@ PRODUCT_COPY_FILES += \
 # WiFi Calibration
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/bcmdhd.cal:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd.cal
+
+# Device init scripts
+PRODUCT_PACKAGES += \
+    init.ril-daemon2.rc
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.multisim.config=dsds
+
+LOCAL_CFLAGS += \
+   -DANDROID_MULTI_SIM \
+   -DANDROID_SIM_COUNT_2
