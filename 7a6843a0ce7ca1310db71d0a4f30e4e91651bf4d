@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "698aa398_3b86fa82",
+        "filename": "device.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2018-06-26T04:37:59Z",
+      "side": 1,
+      "message": "Not sure these really do anything anymore",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 24
+      },
+      "revId": "7a6843a0ce7ca1310db71d0a4f30e4e91651bf4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cd94cba3_868f0eb9",
+        "filename": "rootdir/Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2018-06-26T04:37:59Z",
+      "side": 1,
+      "message": "This won\u0027t get picked up. Needs to be just init",
+      "range": {
+        "startLine": 11,
+        "startChar": 30,
+        "endLine": 11,
+        "endChar": 37
+      },
+      "revId": "7a6843a0ce7ca1310db71d0a4f30e4e91651bf4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3fc47bb8_ac03cca4",
+        "filename": "rootdir/etc/init.ril2.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 3962
+      },
+      "writtenOn": "2018-06-26T04:37:59Z",
+      "side": 1,
+      "message": "What starts this?",
+      "range": {
+        "startLine": 4,
+        "startChar": 4,
+        "endLine": 4,
+        "endChar": 12
+      },
+      "revId": "7a6843a0ce7ca1310db71d0a4f30e4e91651bf4d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
