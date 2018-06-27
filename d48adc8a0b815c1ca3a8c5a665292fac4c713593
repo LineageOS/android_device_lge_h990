@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4be40952_99c6037b",
+        "filename": "device.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2018-06-27T14:04:25Z",
+      "side": 1,
+      "message": "These are wrong.",
+      "range": {
+        "startLine": 41,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 24
+      },
+      "revId": "d48adc8a0b815c1ca3a8c5a665292fac4c713593",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
