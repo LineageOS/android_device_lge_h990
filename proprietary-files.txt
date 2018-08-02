@@ -1,7 +1,17 @@
 # Bluetooth
-vendor/firmware/BCM4358A3_001.004.015.0076.0130_0x66_ORC.HCD:vendor/firmware/BCM4358A3.hcd
+vendor/firmware/BCM4345C0_003.001.025.0139.0223.HCD:vendor/firmware/BCM4345C0.hcd
 
 # WiFi
 vendor/firmware/fw_bcmdhd.bin
 vendor/firmware/fw_bcmdhd_apsta.bin
 vendor/firmware/fw_bcmdhd_mfg.bin
+
+# Dual Sim Radio Firmware
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/7+5_mode/dr_dsds/mcfg_hw.mbn|987a9f92eedec682535e806c1e7043fd089d52d5
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45/7+5_mode/dr_dsds/mcfg_hw.mbn|3d28ee859ce3107999ecb293612f140d8a9bb312
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/7+5_mode/sr_dsds/mcfg_hw.mbn|6d68737ca324a50e54273377555704834b838f2e
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45/7+5_mode/sr_dsds/mcfg_hw.mbn|8db7a97b3ec72e9af0423f522174b680a9ce75a5
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/msm8996/la/7+5_mode/dr_dsds/mcfg_hw.mbn|0ed60247cb894e7ebeb0e2eb9ffb9da57295b65c
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/msm8996/la/7+5_mode/sr_dsds/mcfg_hw.mbn|ae3da392931f0fa9b108fb86b4e3d1b0cb467821
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/msm8996/wp8/7+5_mode/dr_dsds/mcfg_hw.mbn|953fc39267b7673411ab436960519fa4cb790c3b
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/msm8996/wp8/7+5_mode/sr_dsds/mcfg_hw.mbn|2cbd6082415b0a2335afaa8aaeb6cf399550b037
