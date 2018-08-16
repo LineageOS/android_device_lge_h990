@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/lge/h990
 
+# path to the block device for system-as-root
+TARGET_SYSTEM_PARTITION := /dev/sda14
+
 # inherit from common v20
 -include device/lge/v20-common/BoardConfigCommon.mk
 
