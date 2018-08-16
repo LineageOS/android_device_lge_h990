@@ -28,7 +28,7 @@ $(call inherit-product, device/lge/v20-common/v20.mk)
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sensors/sensor_def_elsa_global_com.conf:system/etc/sensors/sensor_def_variable.conf
+    $(LOCAL_PATH)/configs/sensors/sensor_def_elsa_global_com.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_variable.conf
 
 # WiFi Calibration
 PRODUCT_COPY_FILES += \
