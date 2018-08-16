@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,9 +23,6 @@ TARGET_OTA_ASSERT_DEVICE := h990,us996,elsa
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_h990_defconfig
-
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
 -include vendor/lge/h990/BoardConfigVendor.mk
