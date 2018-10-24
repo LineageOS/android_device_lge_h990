@@ -23,6 +23,9 @@ $(call inherit-product-if-exists, vendor/lge/h990/h990-vendor.mk)
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
+# Overlays (inherit after vendor/cm to ensure we override it)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # common v20
 $(call inherit-product, device/lge/v20-common/v20.mk)
 
