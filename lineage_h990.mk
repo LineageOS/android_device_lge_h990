@@ -35,6 +35,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="elsa" \
     PRODUCT_DEVICE="elsa" \
     PRODUCT_NAME="elsa_global_com" \
-    PRIVATE_BUILD_DESC="elsa_global_com-user 7.0 NRD90M 162831845a3a3 release-keys"
+    PRIVATE_BUILD_DESC="elsa_global_com-user 8.0.0 OPR1.170623.032 18325232422a1 release-keys-keys"
 
-BUILD_FINGERPRINT := "lge/elsa_global_com/elsa:7.0/NRD90M/162831845a3a3:user/release-keys" 
+BUILD_FINGERPRINT := "lge/elsa_global_com/elsa:8.0.0/OPR1.170623.032/18325232422a1:user/release-keys"
