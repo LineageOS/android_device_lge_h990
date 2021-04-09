@@ -27,4 +27,4 @@ TARGET_KERNEL_CONFIG := lineageos_h990_defconfig
 BOARD_KERNEL_CMDLINE += model.name=LG-H990ds lge.sim_num=2
 
 # inherit from the proprietary version
--include vendor/lge/h990/BoardConfigVendor.mk
+include vendor/lge/h990/BoardConfigVendor.mk
