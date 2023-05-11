@@ -4,7 +4,7 @@
 # Bluetooth
 vendor/firmware/BCM4345C0_003.001.025.0162.0294_Global_ORC.HCD:vendor/firmware/BCM43xx.hcd
 
-# Dual Sim Radio Firmware
+# Dual Sim Radio Firmware - from modem.img of elsa_global_com-user 8.0.0 OPR1.170623.032 1832617289f73 release-keys
 vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45/7+5_mode/dr_dsds/mcfg_hw.mbn|3d28ee859ce3107999ecb293612f140d8a9bb312
 vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45/7+5_mode/sr_dsds/mcfg_hw.mbn|8db7a97b3ec72e9af0423f522174b680a9ce75a5
 vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/7+5_mode/dr_dsds/mcfg_hw.mbn|987a9f92eedec682535e806c1e7043fd089d52d5
