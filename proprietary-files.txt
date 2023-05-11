@@ -1,14 +1,14 @@
+###  are from from elsa_global_com-user 8.0.0 OPR1.170623.032 1832617289f73 release-keys
 ### All blobs from this list, unless pinned and noted as otherwise,
-##  are from from elsa_global_com-user 8.0.0 OPR1.170623.032 1832617289f73 release-keys
 
 # Bluetooth
 vendor/firmware/BCM4345C0_003.001.025.0162.0294_Global_ORC.HCD:vendor/firmware/BCM43xx.hcd
 
 # Dual Sim Radio Firmware
-vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/7+5_mode/dr_dsds/mcfg_hw.mbn|987a9f92eedec682535e806c1e7043fd089d52d5
 vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45/7+5_mode/dr_dsds/mcfg_hw.mbn|3d28ee859ce3107999ecb293612f140d8a9bb312
-vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/7+5_mode/sr_dsds/mcfg_hw.mbn|6d68737ca324a50e54273377555704834b838f2e
 vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45/7+5_mode/sr_dsds/mcfg_hw.mbn|8db7a97b3ec72e9af0423f522174b680a9ce75a5
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/7+5_mode/dr_dsds/mcfg_hw.mbn|987a9f92eedec682535e806c1e7043fd089d52d5
+vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/7+5_mode/sr_dsds/mcfg_hw.mbn|6d68737ca324a50e54273377555704834b838f2e
 vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/msm8996/la/7+5_mode/dr_dsds/mcfg_hw.mbn|0ed60247cb894e7ebeb0e2eb9ffb9da57295b65c
 vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/msm8996/la/7+5_mode/sr_dsds/mcfg_hw.mbn|ae3da392931f0fa9b108fb86b4e3d1b0cb467821
 vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/msm8996/wp8/7+5_mode/dr_dsds/mcfg_hw.mbn|953fc39267b7673411ab436960519fa4cb790c3b
