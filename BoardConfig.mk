@@ -22,7 +22,7 @@ DEVICE_PATH := device/lge/h990
 TARGET_OTA_ASSERT_DEVICE := h990,us996,elsa
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_h990_defconfig
+TARGET_KERNEL_CONFIG += vendor/lge/h990.config
 
 BOARD_KERNEL_CMDLINE += model.name=LG-H990ds lge.sim_num=2
 
