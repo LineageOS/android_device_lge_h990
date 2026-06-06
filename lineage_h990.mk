@@ -34,5 +34,6 @@ PRODUCT_MANUFACTURER := LGE
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="elsa_global_com-user 8.0.0 OPR1.170623.032 1832617289f73 release-keys" \
     BuildFingerprint="lge/elsa_global_com/elsa:8.0.0/OPR1.170623.032/1832617289f73:user/release-keys" \
-    DeviceName="elsa_global_com" \
+    SystemDevice="elsa_global_com" \
+    SystemName="elsa_global_com" \
     DeviceProduct="elsa"
